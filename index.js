@@ -23,3 +23,17 @@ server.on('upgrade', (req, socket, head) => {
 });
 
 server.listen(process.env.PORT || 3000);
+
+{
+  "name": "uv-proxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "bare-server-node": "^2.0.0",
+    "@titaniumnetwork-dev/ultraviolet": "^3.2.7"
+  }
+}
